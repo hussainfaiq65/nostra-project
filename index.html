@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwindcss - CDN - Link -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- fontawesome-CDN-link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- slider-link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+    <title>Nostra</title>
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <!-- Offer Ad Section -->
+<section id="offer_ad" class="flex justify-center gap-10 bg-black text-white p-5 cursor-pointer">
+    <h2>Sign Up and <span class="font-bold">GET 20% OFF</span> for your first order</h2>
+    <i class="fa fa-close" id="closebar" style="font-size:24px; cursor:pointer;" aria-label="Close offer" role="button"></i>
+</section>
+
+<!-- Navbar Section -->
+<nav id="home" class="flex justify-between items-center sticky top-0 z-20 bg-white shadow-lg w-full p-6">
+    <h1 class="text-2xl font-bold text-black cursor-pointer">Nostra</h1> <!-- Changed to black -->
+
+    <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 md:hidden cursor-pointer text-gray-700 hover:text-blue-600 transition duration-200">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+    </svg>
+
+    <ul class="flex gap-10 cursor-pointer hidden md:flex">
+        <li><a href="#" class="text-gray-700 hover:text-blue-600 transition duration-200">Home</a></li>
+        <li><a href="#newarrival" class="text-gray-700 hover:text-blue-600 transition duration-200">New Arrival</a></li>
+        <li><a href="#mostwanted" class="text-gray-700 hover:text-blue-600 transition duration-200">Most Wanted</a></li>
+        <li><a href="./Collections.html" class="text-gray-700 hover:text-blue-600 transition duration-200">Collection</a></li>
+        <li><a href="./Contact Us.html" class="text-gray-700 hover:text-blue-600 transition duration-200">Contact Us</a></li>
+    </ul>
+</nav>
+
+<!-- Side Navbar -->
+<section id="sidenav" class="bg-gray-900 text-white fixed z-20 top-0 transition-transform duration-300 transform -translate-x-full" style="width: 60%; height: 100vh;">
+    <div class="flex justify-between items-center p-5 border-b border-gray-700">
+        <h2 class="text-lg font-bold">Menu</h2>
+        <p id="closetag" class="cursor-pointer"><i class="fa fa-close" style="font-size:24px"></i></p>
+    </div>
+    <ul class="flex gap-10 flex-col items-center mt-5">
+        <li class="hover:underline transition duration-200"><a href="./index.html">🏠 Home</a></li>
+        <li class="hover:underline transition duration-200"><a href="#newarrival">🆕 New Arrivals</a></li>
+        <li class="hover:underline transition duration-200"><a href="#mostwanted">⭐ Most Wanted</a></li>
+        <li class="hover:underline transition duration-200"><a href="./Collections.html">📦 Collections</a></li>
+        <li class="hover:underline transition duration-200"><a href="./Contact Us.html">✉️ Contact Us</a></li>
+    </ul>
+</section>
+
+    <!-- hero-section -->
+
+    <div class="swiffy-slider relative">
+        <ul class="slider-container">
+            <li><img src="./Images/hero-img1.webp" style="width: 100%;"></li>
+            <li><img src="./Images/hero-img2.webp" style="width: 100%;"></li>
+            <li><img src="./Images/hero-img3.webp" style="width: 100%;;"></li>
+        </ul>
+    
+        <button type="button" class="slider-nav"></button>
+        <button type="button" class="slider-nav slider-nav-next"></button>
+    
+        <div class="slider-indicators">
+            <button class="active"></button>
+            <button></button>
+            <button></button>
+        </div>
+        <div class="flex flex-col text-white items-center font-bold" style="position: absolute; top: 25%; left: 25%; line-height: 2;">            
+            <h1 class="" style="font-size: 4vw;">Level up your style with our</h1>
+            <h4 class="" style="font-size: 1.5vw;">Summer Collections</h4>     
+            <button class="border border-white hover:bg-white hover:text-black transition-all" style="font-size: 1.5vw; margin-top: 2%; padding: 1% 2%;"> Shop Now <i class="fa fa-arrow-right"></i> </button>
+        </div>
+    </div>
+
+
+
+<!-- Brands Section -->
+<section id="brands" class="mt-12">
+    <h1 class="text-left pl-4 font-black text-2xl md:text-4xl">Brands</h1>
+    <div class="flex justify-between items-center px-4 pb-8 pt-4 md:text-2xl">
+        <div class="flex flex-col items-center">
+            <img src="./Images/Louis_Vuitton.png" width="70px" alt="Louis Vuitton">
+            <p class="mt-2">Louis Vuitton</p>
+        </div>
+        <div class="flex flex-col items-center">
+            <img src="./Images/Allen Solly.jpg" width="70px" alt="Allen Solly">
+            <p class="mt-2">Allen Solly</p>
+        </div>
+        <div class="flex flex-col items-center">
+            <img src="./Images/dior.jpg" width="70px" alt="Christian Dior">
+            <p class="mt-2">Christian Dior</p>
+        </div>
+        <div class="flex flex-col items-center">
+            <img src="./Images/armani.png" width="70px" alt="Armani">
+            <p class="mt-2">Armani</p>
+        </div>
+        <div class="flex flex-col items-center">
+            <img src="./Images/nike.jpg" width="70px" alt="Nike">
+            <p class="mt-2">Nike</p>
+        </div>
+        <div class="flex flex-col items-center">
+            <img src="./Images/calvin-klein.svg" width="70px" alt="Calvin Klein">
+            <p class="mt-2">Calvin Klein</p>
+        </div>
+    </div>
+</section>
+
+<!-- Service Section -->
+<section id="service">
+    <div class="flex justify-between items-center p-4 mb-8">
+        <div class="flex flex-col text-left">
+            <h2 class="text-3xl font-bold text-black">We Provide the Best</h2>
+            <h2 class="text-3xl font-bold text-black">Customer Experiences</h2>
+        </div>
+        <div class="text-right">
+            <p class="text-xl font-bold mt-2 text-black">|| We ensure that our customers have the best shopping experience.</p>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-4">
+        <div class="border border-gray-300 rounded-lg p-6 bg-black shadow-md hover:shadow-lg transition-shadow duration-300 text-center">
+            <i class="far fa-check-circle text-white text-4xl mb-4"></i>
+            <h2 class="font-bold text-lg text-white">Original Products</h2>
+            <p class="text-white">We offer authentic, original products designed to meet the highest standards of quality and innovation.</p>
+        </div>
+        <div class="border border-gray-300 rounded-lg p-6 bg-black shadow-md hover:shadow-lg transition-shadow duration-300 text-center">
+            <i class="far fa-smile text-white text-4xl mb-4"></i>
+            <h2 class="font-bold text-lg text-white">Satisfaction Guarantee</h2>
+            <p class="text-white">We offer a satisfaction guarantee to ensure you receive the quality and value you expect.</p>
+        </div>
+        <div class="border border-gray-300 rounded-lg p-6 bg-black shadow-md hover:shadow-lg transition-shadow duration-300 text-center">
+            <i class="fas fa-paint-brush text-white text-4xl mb-4"></i>
+            <h2 class="font-bold text-lg text-white">New Arrivals Every Day</h2>
+            <p class="text-white">We introduce new arrivals daily, ensuring a fresh selection for our customers.</p>
+        </div>
+        <div class="border border-gray-300 rounded-lg p-6 bg-black shadow-md hover:shadow-lg transition-shadow duration-300 text-center">
+            <i class="fas fa-shipping-fast text-white text-4xl mb-4"></i>
+            <h2 class="font-bold text-lg text-white">Fast & Free Shipping</h2>
+            <p class="text-white">Enjoy fast and free shipping on all orders, ensuring your products arrive quickly and at no extra cost.</p>
+        </div>
+    </div>
+</section>
+<!-- New Arrivals -->
+<section>
+    <h1 class="font-bold text-2xl md:text-4xl ml-5">New Arrivals</h1>
+    <div class="grid grid-cols-2 md:grid md:grid-cols-4 gap-5 m-5">
+        <div class="relative">
+            <img class="filter brightness-50" src="./images/WhiteShirt.jpg" alt="WhiteShirt">
+            <div class="absolute bottom-5 left-0 right-0 flex justify-center md:bottom-8">
+                <button class="px-4 py-2 md:px-14 md:py-4 bg-white text-black rounded-lg">Shop Now</button>
+            </div>
+        </div>
+        <div class="relative">
+            <img class="filter brightness-50" src="./images/BlackShirt.jpg" alt="BlackShirt">
+            <div class="absolute bottom-5 left-0 right-0 flex justify-center md:bottom-8">
+                <button class="px-4 py-2 md:px-14 md:py-4 bg-white text-black rounded-lg">Shop Now</button>
+            </div>
+        </div>
+        <div class="relative">
+            <img class="filter brightness-50" src="./images/Jeans.jpg" alt="Jeans">
+            <div class="absolute bottom-5 left-0 right-0 flex justify-center md:bottom-8">
+                <button class="px-4 py-2 md:px-14 md:py-4 bg-white text-black rounded-lg">Shop Now</button>
+            </div>
+        </div>
+        <div class="relative">
+            <img class="filter brightness-50" src="./images/Hoodie.jpg" alt="Hoodie">
+            <div class="absolute bottom-5 left-0 right-0 flex justify-center md:bottom-8">
+                <button class="px-4 py-2 md:px-14 md:py-4 bg-white text-black rounded-lg">Shop Now</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <h1 class="text-xl font-bold md:text-4xl ml-5">Most Wanted</h1>
+    <div class="flex items-center justify-center mt-5">
+        <div class="overflow-x-auto whitespace-nowrap">
+            <div class="relative inline-block w-96">
+                <div>
+                    <img src="./images/LinenShirt.jpg" alt="LinenShirt">
+                </div>
+                <div class="absolute top-10 left-8">
+                    <p class="bg-black font-bold text-white text-xl inline px-5 py-2 rounded-lg">Sale</p>
+                </div>
+                <div class="absolute bottom-5 right-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-16 h-16 cursor-pointer ">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="relative inline-block w-96">
+                <div>
+                    <img src="./images/overshirt.jpg" alt="Overshirt">
+                </div>
+                <div class="absolute top-10 left-8">
+                    <p class="bg-black font-bold text-white text-xl inline px-5 py-2 rounded-lg">Sale</p>
+                </div>
+                <div class="absolute bottom-5 right-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-16 h-16 cursor-pointer">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="relative inline-block w-96">
+                <div>
+                    <img src="./images/RegularFit.jpg" alt="RegularFit">
+                </div>
+                <div class="absolute top-10 left-8">
+                    <p class="bg-black font-bold text-white text-xl inline px-5 py-2 rounded-lg">Sale</p>
+                </div>
+                <div class="absolute bottom-5 right-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-16 h-16 cursor-pointer">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="relative inline-block w-96">
+                <div>
+                    <img src="./images/COTTONSHIRT.jpg" alt="CottonShirt">
+                </div>
+                <div class="absolute top-10 left-8">
+                    <p class="bg-black font-bold text-white text-xl inline px-5 py-2 rounded-lg">Sale</p>
+                </div>
+                <div class="absolute bottom-5 right-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-16 h-16 cursor-pointer">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="relative inline-block w-96">
+                <div>
+                    <img src="./images/CasualShirt.jpg" alt="CasualShirt">
+                </div>
+                <div class="absolute top-10 left-8">
+                    <p class="bg-black font-bold text-white text-xl inline px-5 py-2 rounded-lg">Sale</p>
+                </div>
+                <div class="absolute bottom-5 right-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-16 h-16 cursor-pointer">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="relative inline-block w-96">
+                <div>
+                    <img src="./images/hoodie 1.jpg" alt="Hoodie">
+                </div>
+                <div class="absolute top-10 left-8">
+                    <p class="bg-black font-bold text-white text-xl inline px-5 py-2 rounded-lg">Sale</p>
+                </div>
+                <div class="absolute bottom-5 right-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-16 h-16 cursor-pointer">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="relative inline-block w-96">
+                <div>
+                    <img src="./images/jacket.jpg" alt="Jacket">
+                </div>
+                <div class="absolute top-10 left-8">
+                    <p class="bg-black font-bold text-white text-xl inline px-5 py-2 rounded-lg">Sale</p>
+                </div>
+                <div class="absolute bottom-5 right-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-16 h-16 cursor-pointer">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- offer-section -->
+<section id="offer" class="bg-black text-white p-8 mt-8 mx-4" style="font-size: 2vw;">
+    <div class="flex flex-col md:flex-row justify-around items-center gap-4">
+        <div>
+            <img src="./Images/offer-img.webp" alt="Limited time offer image" class="w-full md:w-auto">
+        </div>
+        <div class="text-center md:text-left">
+            <h1 class="md:text-4xl font-bold">Limited Offer</h1>
+            <p class="py-4" style="font-size: 2vw;">35% OFF for the first 30 Customers</p>
+            <button class="border-none bg-white text-black px-5 py-2 text-lg md:text-xl">Shop Now <i class="fa-sharp fa-solid fa-arrow-right-long"></i></button>
+        </div>
+    </div>
+</section>
+
+<!-- Newsletter-section -->
+<section class="text-center my-8">
+    <h2 class="font-bold text-3xl md:text-4xl mb-4">Join Our Newsletter</h2>
+    <p class="my-3 text-lg">Signup for our email newsletter to get exclusive discounts, updates, and more.</p>
+    <input 
+        type="text" 
+        placeholder="Write here..." 
+        class="border border-gray-300 rounded-md p-2 w-4/5 md:w-1/2"
+        style="font-size: 1rem;"
+    >
+    <button 
+        class="mt-3 bg-gray-800 text-white font-semibold py-2 px-4 rounded-md"
+        style="font-size: 1rem;"
+    >
+        Subscribe <i class="fa-sharp fa-solid fa-arrow-right-long"></i>
+    </button>
+</section>
+
+<!-- Footer-section -->
+<footer class="bg-black text-white p-8 mt-8">
+    <div class="flex flex-col items-start">
+        <h2 class="font-bold text-3xl md:text-4xl mb-4">Nostra</h2>
+        <p class="text-lg md:text-xl mb-4">
+            The standard chunk of pics and docs used to create a model webpage using Tailwind CSS.
+        </p>
+        <div class="flex gap-5 mt-2 text-2xl">
+            <a href="#" aria-label="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="#" aria-label="Twitter">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+        <p class="mt-4 text-lg md:text-xl">© 2004 Nostra.com</p>
+    </div>
+</footer>
+<script src="./script.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CSS - CDN Link -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Font Awesome - CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Nostra</title>
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+   
+        <!-- Offer Ad Section -->
+<section id="offer_ad" class="flex justify-center gap-10 bg-black text-white p-5 cursor-pointer">
+    <h2>Sign Up and <span class="font-bold">GET 20% OFF</span> your first order</h2>
+    <button id="closebar" aria-label="Close offer ad" class="text-white">
+        <i class="fa fa-close" style="font-size:24px"></i>
+    </button>
+</section>
+
+       <!-- Navbar Section -->
+<nav id="home" class="flex justify-between sticky top-0 z-20 bg-white w-full p-6">
+    <h1 class="text-2xl font-bold cursor-pointer">Nostra</h1>
+
+    <button id="menuicon" aria-label="Toggle menu" class="w-8 md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+    </button>
+
+    <ul class="flex gap-14 cursor-pointer hidden md:flex">
+        <li><a href="./index.html" class="hover:underline">Home</a></li>
+        <li><a href="./index.html" class="hover:underline">New Arrival</a></li>
+        <li><a href="./index.html" class="hover:underline">Most Wanted</a></li>
+        <li><a href="./Collections.html" class="hover:underline">Collection</a></li>
+        <li><a href="./Contact Us.html" class="hover:underline">Contact Us</a></li>
+    </ul>
+</nav>
+    <!-- Side Navbar -->
+<section id="sidenav" class="bg-gray-900 text-white fixed z-20 top-0 transition-all duration-1000" style="width: 60%; height: 100vh; left: -60%;">
+    <div class="text-right p-5">
+        <button id="closetag" aria-label="Close side navigation" class="cursor-pointer">
+            <i class="fa fa-close" style="font-size:20px"></i>
+        </button>
+    </div>
+    <ul class="flex gap-10 flex-col items-center">
+        <li class="hover:underline"><a href="./index.html">Home</a></li>
+        <li class="hover:underline"><a href="./Collections.html">Collections</a></li>
+        <li class="hover:underline"><a href="./Contact Us.html">Contact Us</a></li>
+    </ul>
+</section>
+
+
+        <!-- main-section -->
+
+        <div class="flex">
+
+            <!-- part-1 -->
+<div class="relative px-8 basis-1/4" style="font-size: 1.5vw;">
+    <h3 class="font-bold" style="font-size: 2.5vw;">Occasion</h3>
+    <div class="py-2" style="line-height: 2;">
+        <label><input class="filter-checkbox" type="checkbox" name="tags" value="summer"> Summer</label><br>
+        <label><input class="filter-checkbox" type="checkbox" name="tags" value="party"> Party</label><br>
+        <label><input class="filter-checkbox" type="checkbox" name="tags" value="beach"> Beach</label>
+    </div>
+
+    <h3 class="font-bold" style="font-size: 2.5vw;">Colors</h3>
+    <div class="py-2" style="line-height: 2;">
+        <label><input class="filter-checkbox" type="checkbox" name="tags" value="red"> Red</label><br>
+        <label><input class="filter-checkbox" type="checkbox" name="tags" value="blue"> Blue</label><br>
+        <label><input class="filter-checkbox" type="checkbox" name="tags" value="white"> White</label><br>
+        <label><input class="filter-checkbox" type="checkbox" name="tags" value="green"> Green</label>
+    </div>
+
+    <h3 class="font-bold" style="font-size: 2.5vw;">Arrivals</h3>
+    <div class="py-2" style="line-height: 2;">
+        <label><input class="filter-checkbox" type="checkbox" name="tags" value="new"> New</label><br>
+        <label><input class="filter-checkbox" type="checkbox" name="tags" value="old"> Old</label>
+    </div>
+
+    <hr class="absolute top-0 right-0 border-l-4 border-black" style="height: 100%;">
+</div>
+
+
+            <!-- part-2 -->
+
+            <div class="relative basis-3/4" style="margin-top: -5%;">
+                <h1 class="font-black text-2xl pl-4 text-center" style="margin-top: 7vw; margin-bottom: 2vw; font-size: 2vw;">Trending Collections</h1>
+                <p class="text-center" style="margin: 5% 0; font-size: 1vw;"><input id="search" type="text" placeholder="Search for Products" style="width: 80%; padding: 1.5%;" class=" border border-black"></p>
+                <div class="grid grid-cols-3 md:grid-cols-4  px-4 justify-between gap-6" id="product-container">
+                    
+                    <div class="relative" id="product" data-category="summer">
+                        <img style="width: 20vw;" src="./Images/WhiteShirt.jpg" alt="" class="rounded">
+                        <div class="text-center font-bold" style="font-size: 1.2vw; line-height: 2;">
+                            <p>White Shirt</p>
+                            <p><del>&#8377;799</del> &#8377; 699</p>
+                        </div>
+                    </div>
+                    <div class="relative" id="product" data-category="red">
+                        <img style="width: 20vw;" src="./Images/ShortSleeve.jpg" alt="" class="rounded">
+                        <div class="text-center font-bold" style="font-size: 1.2vw; line-height: 2;">
+                            <p>Short Sleeve Shirt</p>
+                            <p><del>&#8377;899</del> &#8377; 749</p>
+                        </div>
+                    </div>
+                    <div class="relative" id="product" data-category="white">
+                        <img style="width: 20vw;" src="./Images/RegularFit.jpg" alt="" class="rounded">
+                        <div class="text-center font-bold" style="font-size: 1.2vw; line-height: 2;">
+                            <p>Regular Fit Shirt</p>
+                            <p><del>&#8377;699</del> &#8377; 599</p>
+                        </div>
+                    </div>
+                    <div class="relative" id="product" data-category="beach">
+                        <img style="width: 20vw;" src="./Images/overshirt.jpg" alt="" class="rounded">
+                        <div class="text-center font-bold" style="font-size: 1.2vw; line-height: 2;">
+                            <p>Overshirt</p>
+                            <p><del>&#8377;999</del> &#8377; 849</p>
+                        </div>
+                    </div>
+                    <div class="relative" id="product" data-category="blue">
+                        <img style="width: 20vw;" src="./Images/LinenShirt.jpg" alt="" class="rounded">
+                        <div class="text-center font-bold" style="font-size: 1.2vw; line-height: 2;">
+                            <p>Linen Shirt</p>
+                            <p><del>&#8377;1099</del> &#8377; 949</p>
+                        </div>
+                    </div>
+                    <div class="relative" id="product" data-category="blue">
+                        <img style="width: 20vw;" src="./Images/BlackShirt.jpg" alt="" class="rounded">
+                        <div class="text-center font-bold" style="font-size: 1.2vw; line-height: 2;">
+                            <p>Black Shirt</p>
+                            <p><del>&#8377;799</del> &#8377; 699</p>
+                        </div>
+                    </div>
+                    <div class="relative" id="product" data-category="party">
+                        <img style="width: 20vw;" src="./Images/CasualShirt.jpg" alt="" class="rounded">
+                        <div class="text-center font-bold" style="font-size: 1.2vw; line-height: 2;">
+                            <p>Casual Shirt</p>
+                            <p><del>&#8377;599</del> &#8377; 499</p>
+                        </div>
+                    </div>
+                    <div class="relative" id="product" data-category="old">
+                        <img style="width: 20vw;" src="./Images/COTTONSHIRT.jpg" alt="" class="rounded">
+                        <div class="text-center font-bold" style="font-size: 1.2vw; line-height: 2;">
+                            <p>Cotton Shirt</p>
+                            <p><del>&#8377;699</del> &#8377; 599</p>
+                        </div>
+                    </div>
+                    <div class="relative" id="product" data-category="old">
+                        <img style="width: 20vw;" src="./Images/Hoodie.jpg" alt="" class="rounded">
+                        <div class="text-center font-bold" style="font-size: 1.2vw; line-height: 2;">
+                            <p>Hoodie</p>
+                            <p><del>&#8377;1299</del> &#8377; 1099</p>
+                        </div>
+                    </div>
+                    <div class="relative" id="product" data-category="old">
+                        <img style="width: 20vw;" src="./Images/ShortSleeve.jpg" alt="" class="rounded">
+                        <div class="text-center font-bold" style="font-size: 1.2vw; line-height: 2;">
+                            <p>Short Sleeve Shirt</p>
+                            <p><del>&#8377;899</del> &#8377; 749</p>
+                        </div>
+                    </div>
+                    <div class="relative" id="product" data-category="old">
+                        <img style="width: 20vw;" src="./Images/RegularFit.jpg" alt="" class="rounded">
+                        <div class="text-center font-bold" style="font-size: 1.2vw; line-height: 2;">
+                            <p>Regular Fit Shirt</p>
+                            <p><del>&#8377;699</del> &#8377; 599</p>
+                        </div>
+                    </div>
+                    <div class="relative" id="product" data-category="old">
+                        <img style="width: 20vw;" src="./Images/BlackShirt.jpg" alt="" class="rounded">
+                        <div class="text-center font-bold" style="font-size: 1.2vw; line-height: 2;">
+                            <p>Black Shirt</p>
+                            <p><del>&#8377;799</del> &#8377; 699</p>
+                        </div>
+                    </div>
+                    
+  
+        
+
+
+<script src="./script.js"></script>
+</body>
+</html>
